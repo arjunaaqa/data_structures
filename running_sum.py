@@ -25,6 +25,9 @@ def running_sum(arr):
 
 def main():
     arr = input("Enter the imput array: ")
+    if arr is None or len(arr)==0:
+        print(f"Input is None or empty")
+        exit()
     arr = arr.split(",")
     arr = [int(x) for x in arr ]
     print(f"Input is {arr}")
